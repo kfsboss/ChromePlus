@@ -108,14 +108,14 @@ std::wstring GetCommand(LPWSTR param)
 
                 wchar_t temp[MAX_PATH];
                 wsprintf(temp, L"--disk-cache-dir=%s", diskcache.c_str());
-                args.push_back(temp);
+                //args.push_back(temp);
             }
             {
                 auto userdata = GetUserDataDir();
 
                 wchar_t temp[MAX_PATH];
                 wsprintf(temp, L"--user-data-dir=%s", userdata.c_str());
-                args.push_back(temp);
+                //args.push_back(temp);
             }
         }
     }
